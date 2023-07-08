@@ -1,0 +1,100 @@
+body {
+    background: #ccc;
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    background: #eee;
+}
+
+header h1 {
+    color: #036;
+    text-align: center;
+    font-size: 1rem;
+}
+main{
+    padding-top: 3rem;
+    margin: 0 1rem;
+}
+ul {
+
+    padding-left: 0;
+}
+
+.LogForm {
+    padding-top: 3rem;
+}
+
+li {
+    max-width: 36rem;
+    margin: 1rem auto;
+    padding: 1rem;
+    background: #fff;
+    border-bottom: 1px solid #69c;
+    list-style: none;
+}
+
+.pinned {
+    color: #999;
+    font-size: 0.75rem;
+    line-height: 1rem;
+}
+
+.time-container {
+    color: #999;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    text-align: right;
+}
+
+.load-button button {
+    display: block;
+    font-size: 1rem;
+    margin: 1rem auto;
+    padding: 1rem;
+    color: #000;
+    background: #fff;
+    border: none;
+    border-bottom: 1px solid #69c;
+}
+
+.load-button button:disabled {
+    color: #000;
+    cursor: default;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #000;
+        color: #fff;
+    }
+    header {
+        background: #222;
+    }
+    header h1 {
+        color: #cdf;
+    }
+    li {
+        background: #333;
+        border-top: 1px solid #369;
+        border-bottom: 0;
+    }
+    .pinned {
+        color: #999;
+    }
+    .time-container {
+        color: #999;
+    }
+    .load-button button {
+        background: #333;
+        color: #fff;
+        border-top: 1px solid #369;
+        border-bottom: 0;
+    }
+    .load-button button:disabled {
+        color: #fff;
+    }
+}
